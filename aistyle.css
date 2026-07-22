@@ -1,0 +1,40 @@
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  width: 100%;
+  background: #fff;
+  color: #111;
+  overflow-x: hidden;
+}
+
+.section1 {
+  background-image: url(background1.jpg);
+  background-size: 120%;        
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  animation: subtleZoom 32s ease-in-out infinite alternate;
+}
+
+@keyframes subtleZoom {
+  0%   { background-size: 110%; background-position: 40% 40%; }
+  50%  { background-size: 125%; background-position: 55% 50%; }
+  100% { background-size: 115%; background-position: 50% 60%; }
+}
+.section1text h1, h2 {
+	display: block;
+	text-align: left;
+	margin-left: 3vw;
+	line-height: 2vw;
+}
+
+.section1text h1 {
+	font-size: 8vw;
+}
+
+.section1text h2 {
+	font-size: 2vw;
+}
